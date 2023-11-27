@@ -1,5 +1,9 @@
 # Neo4j_VS_SQLite
 
+University project for Data Management course.
+
+DataSet avalaible at https://www.kaggle.com/datasets/hugomathien/soccer.
+
 ## Authors
 
 
