@@ -82,7 +82,7 @@ with driver.session() as session:
     query = """
     MATCH (t:Team), (ta:Team_Attributes)
     WHERE t.team_api_id = ta.team_api_id
-    CREATE (t)-[:HAS_ATTRIBUTES]->(ta)
+    CREATE (t)-[:HAS_ATTRIBUTES_TEAM]->(ta)
     """
     session.run(query)
     print("Created HAS_ATTRIBUTES_TEAM relationships.")
@@ -91,7 +91,7 @@ with driver.session() as session:
     query = """
     MATCH (p:Player), (pa:Player_Attributes)
     WHERE p.player_api_id = pa.player_api_id
-    CREATE (p)-[:HAS_ATTRIBUTES]->(pa)
+    CREATE (p)-[:HAS_ATTRIBUTES_PLAYER]->(pa)
     """
     session.run(query)
     print("Created HAS_ATTRIBUTES_PLAYER relationships.")
